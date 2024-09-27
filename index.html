@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .container{
+        width: 400px;
+        height: 800px;
+        box-shadow: 20px solid rgb(21, 11, 11);
+        margin-top: 30px;
+        margin: auto;
+
+       }
+       .container img{
+        width: inherit;
+        height: inherit;
+        position: relative;
+        box-shadow: 20px solid;
+        border-radius: 20px;
+       }
+       .content{
+        padding-top: 20px;
+       }
+       .container .content{
+        position:absolute;
+color: rgb(238, 242, 242);
+top: 0;
+color:rgb(234, 230, 230);
+padding-left: 20px;
+padding-top:90px;
+transform: perspective(400px)rotatey(90deg);
+transition: all 2s;
+transform-origin: left;
+box-sizing: border-box;
+
+
+       }
+       .container:hover .content{
+        transform: perspective(400px)rotatey(0deg);
+        transition: all 2s;
+       }
+       h1{
+        font-size: 20px;
+        text-align: center;
+       margin-top: -50px;
+       margin-bottom:60px;
+       }
+       .content:hover{
+color: rgb(29, 38, 29);
+       }
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img style="background-color: orange;">
+        <form class="content">
+            <h1><u>STUDENT REGISTRATION FORM</u></h1>
+            <label for="usernme"><b>USERNAME:</b></label>
+            <input type="text" id="username" placeholder="enter your name" name=" myname"  ><BR><br>
+            <label for="password"><b>PASSWORD:</b ></label>
+            <input type="password" id="password" placeholder="password"><BR><br>
+            <label for="email"><b>EMAIL:</b ></label>
+            <input type="email"id=email placeholder="vigneshgoud12@gmail.com" ><br><BR>
+            <label><B> ABOUT YOURSELF:<B></label><br>
+            <textarea rows="3" cols="40"> bio </textarea><br><br>
+            <label> DESCRIPTION :</label>
+            <select>
+                <optgroup label="softwere enginner" id=""><br>
+                    <option value="bmw"> senior devopler</option>
+                    <option value="bmw"> junior</option>
+                    <option value="bmw"> not a devolper</option>
+               </optgroup>
+            </select><br><BR>
+            <label>DATE OF BIRTH:</label>
+            <input type="date" placeholder=""><br><BR>
+            <label>IMAGE:</label>
+            <input type="file" placeholder=""><br><BR>
+            <label for="number">MOBILE:</label>
+            <input type="tel" id="number"placeholder=" enter your mob number" name="my number" pattern="[0-9]{4,10}"><br><br>
+            <label id="level">PROGRAMMING LEVEL:</label><br>
+            <input type="radio" id="level"name=" programming level">beginner<br>
+            <input type="radio" name=" programming level">intermedite<br>
+            <input type="radio" name=" programming level">proessional<br><br>
+            <label>LANGUAGES KNOWN:</label><br>
+            <input type="checkbox" name="experiance"value=" java"> java<br>
+            <input type="checkbox" name="experiance"value=" ptyhon"> python<br>
+            <input type="checkbox" name="experiance" value=" html"> html<br><br>
+            <label>WEBSITE URL:</label>
+            <input type="url" placeholder="your website"><br><BR>
+            <pre><input type="reset" >            <input type="submit"> </pre>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
